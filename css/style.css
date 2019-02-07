@@ -72,6 +72,7 @@ a{
     text-transform: uppercase;
 }
 a:hover{
+    color: #be4345;
     text-decoration: none;
 }
 p span{
@@ -79,6 +80,11 @@ p span{
 }
 .container, .row{
     position: relative;
+}
+.cover{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* GENERAL */
 
@@ -127,6 +133,8 @@ header .container{
 }
 header .cd-logo img{
     height: 19px;
+    -webkit-transition: opacity 300ms, display 300ms;
+    transition: opacity 300ms, display 300ms;
 }
 header.bg-transparent nav a{
     color: #FFFFFF;
@@ -136,16 +144,22 @@ header.bg-light .cd-main-nav a,
 header.bg-light  .cd-main-nav input[type="search"]{
     color: #555555;
 }
+header.bg-light .cd-nav-trigger span::before, 
+header.bg-light .cd-nav-trigger span::after,
+header.bg-light .cd-nav-trigger span{
+    background-color: #000000;
+}
 .item{
     position: relative;
     overflow: hidden;
 }
-.item div{
+#owl-hero .item div{
     height: 408px;
     width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+#owl-firma .item div{
+    height: 447px;
+    width: 100%;
 }
 #owl-hero .item div::before {
     content: '';
@@ -204,16 +218,22 @@ header.bg-light  .cd-main-nav input[type="search"]{
 }
 .owl-carousel .owl-prev{
     left: 0;
-    background: url('../img/arrow-left.svg') !important;
+    background: url('../img/arrow-left.svg') no-repeat !important;
+    background-color: #B02E31 !important;
 }
 .owl-carousel .owl-next{
     right: 0;
-    background: url('../img/arrow-right.svg') !important;
+    background: url('../img/arrow-right.svg') no-repeat !important;
+    background-color: #B02E31 !important;
 }
-.owl-firma .owl-prev{
+.owl-carousel .owl-prev span,
+.owl-carousel .owl-next span{
+    display: none;
+}
+#owl-firma .owl-prev{
     left: -27px;
 }
-.owl-firma .owl-next{
+#owl-firma .owl-next{
     right:-27px;
 }
 .b-lead{
@@ -274,9 +294,6 @@ header.bg-light  .cd-main-nav input[type="search"]{
 .rw-card-top{
     height: 156px;
     width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .rw-card-body{
     padding: 31px 14px 23px 21px;
@@ -318,7 +335,38 @@ header.bg-light  .cd-main-nav input[type="search"]{
     background-image: url('../img/bg-parallax.jpg');
 }
 .parallax-cta .row{
-    height: 337px;
+    min-height: 337px;
+}
+#owl-team .owl-item .cover{
+    height: 177px;
+}
+#owl-team h5{
+    color: #555555;
+    font-size: 17px;
+    line-height: 24px;
+    margin-top: 38px;
+}
+#owl-team h6{
+    color: #777777;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+#owl-team .owl-prev,
+#owl-team .owl-next{
+    width: 14px;
+    height: 32px;
+    top: -75px;
+    background-color: unset !important;
+}
+#owl-team .owl-prev{
+    left: -70px;
+    background: url('../img/arrow-left-dark.svg') no-repeat !important;
+}
+#owl-team .owl-next{
+    right: -70px;
+    background: url('../img/arrow-right-dark.svg') no-repeat !important;
 }
 footer{
     padding-top: 65px;
@@ -423,6 +471,9 @@ footer hr{
     #quote p {
         font-size: 21px;
         line-height: 34px;
+    }
+    .parallax-cta .row {
+        min-height: 207px;
     }
     footer li a, footer p {
         line-height: 28px;

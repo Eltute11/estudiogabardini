@@ -15,8 +15,8 @@
   <header class="bg-light">
     <div class="container">
       <div class="cd-main-header animate-search">
-        <!-- <div class="cd-logo"><a href="#0"><img src="img/cd-logo-light.svg" alt="Logo"></a></div> -->
-        <div class="cd-logo"><a href="#0"><img src="img/cd-logo-dark.svg" alt="Logo"></a></div>
+        <div class="cd-logo cd-logo-light"><a href="#0"><img src="img/cd-logo-light.svg" alt="Logo"></a></div>
+        <div class="cd-logo cd-logo-dark"><a href="#0"><img src="img/cd-logo-dark.svg" alt="Logo"></a></div>
     
         <nav class="cd-main-nav-wrapper">
           <a href="#search" class="cd-search-trigger cd-text-replace">Buscar</a>
@@ -38,7 +38,7 @@
   <main class="cd-main-content">
 
     <div class="item">
-      <div style="background-image: url('img/hero.jpeg');height: 150px;">
+      <div style="background-image: url('img/bg-firma.png');height: 150px;" class="cover">
         <h1 class="text-center">LA FIRMA</h1>
       </div>
     </div>
@@ -61,16 +61,16 @@
             <a href="#">VEA CORRESPONSALÍAS</a>
           </div>
 
-          <div class="col-lg-6 pl-lg-5">
+          <div class="col-lg-6 pl-lg-5 mt-5 mt-lg-0">
             <h2>ÁREAS DE PRÁCTICA</h2>
-            <div class="owl-carousel owl-firma">
+            <div class="owl-carousel" id="owl-firma">
               <div class="item">
-                <div style="background-image: url('img/bg-areasdepractica.jpg')">
+                <div style="background-image: url('img/bg-areasdepractica.jpg')" class="cover">
                   <h2>Derecho bancario y financiero</h2>
                 </div>
               </div>
               <div class="item">
-                <div style="background-image: url('img/bg-areasdepractica.jpg')">
+                <div style="background-image: url('img/bg-areasdepractica.jpg')" class="cover">
                   <h2>Derecho bancario y financiero</h2>
                 </div>
               </div>
@@ -83,24 +83,95 @@
 
     <section class="parallax parallax-cta">
       <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <div class="col">
+        <div class="row justify-content-center justify-content-md-between align-items-center">
+          <div class="col-12 col-md py-4 py-md-0">
             <p class="b-lead text-white">
               “50 años de experiencia nos permiten brindarle 
               asesoramiento jurídico de calidad y generación
               de resultados eficaces”
             </p>
           </div>
-          <div class="col-auto">
+          <div class="col-auto py-4 py-md-0">
             <a href="#" class="btn btn-light">Quiero recibir<br>asesoramiento</a>
           </div>
         </div>
       </div>
     </section>
 
+    <section class="py-5 my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-center">Nuestros profesionales</h2>
+          </div>
+          <div class="col-12">
+            <div class="owl-carousel" id="owl-team">
+
+              <div>
+                <div style="background-image: url('http://fpoimg.com/165x177');" class="cover rounded"></div>
+                <h5>Eduardo R. Gabardini</h5>
+                <h6>Socio</h6>
+                <a href="#" class="text-uppercase">Ver CV</a>
+              </div>
+
+              <div>
+                <div style="background-image: url('http://fpoimg.com/165x177');" class="cover rounded"></div>
+                <h5>Luis Gabardini</h5>
+                <h6>Socio</h6>
+                <a href="#" class="text-uppercase">Ver CV</a>
+              </div>
+
+              <div>
+                <div style="background-image: url('http://fpoimg.com/165x177');" class="cover rounded"></div>
+                <h5>Eduardo R. Gabardini</h5>
+                <h6>Socio</h6>
+                <a href="#" class="text-uppercase">Ver CV</a>
+              </div>
+
+              <div>
+                <div style="background-image: url('http://fpoimg.com/165x177');" class="cover rounded"></div>
+                <h5>Luis Gabardini</h5>
+                <h6>Socio</h6>
+                <a href="#" class="text-uppercase">Ver CV</a>
+              </div>
+
+              <div>
+                <div style="background-image: url('http://fpoimg.com/165x177');" class="cover rounded"></div>
+                <h5>Eduardo R. Gabardini</h5>
+                <h6>Socio</h6>
+                <a href="#" class="text-uppercase">Ver CV</a>
+              </div>
+
+              <div>
+                <div style="background-image: url('http://fpoimg.com/165x177');" class="cover rounded"></div>
+                <h5>Luis Gabardini</h5>
+                <h6>Socio</h6>
+                <a href="#" class="text-uppercase">Ver CV</a>
+              </div>
+
+              <div>
+                <div style="background-image: url('http://fpoimg.com/165x177');" class="cover rounded"></div>
+                <h5>Eduardo R. Gabardini</h5>
+                <h6>Socio</h6>
+                <a href="#" class="text-uppercase">Ver CV</a>
+              </div>
+
+              <div>
+                <div style="background-image: url('http://fpoimg.com/165x177');" class="cover rounded"></div>
+                <h5>Luis Gabardini</h5>
+                <h6>Socio</h6>
+                <a href="#" class="text-uppercase">Ver CV</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="bg-secondary py-5">
-      <h2 class="text-center">Clientes</h2>
-      <div class="owl-carousel owl-brand">
+      <h2 class="text-center pt-4">Clientes</h2>
+      <div class="owl-carousel pb-5" id="owl-brand">
         <img src="img/clientes/farmacity.jpg" alt="farmacity">
         <img src="img/clientes/cablevision.jpg" alt="cablevision">
         <img src="img/clientes/mapfre.jpg" alt="mapfre">
@@ -208,51 +279,6 @@
   <script src="js/modernizr.js"></script> <!-- Modernizr -->
   <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
   <script src="js/owl.carousel.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      var options = {
-        loop:true,
-        margin:0,
-        nav:true,
-        dots:false,
-        items:1,
-        autoplay:true, 
-        autoplayTimeout:5000, 
-        autoplayHoverPause:true,
-      };
-      $(".owl-firma").owlCarousel(options);
-      $("#owl-hero").owlCarousel(options);
-
-      var options_1 = {
-        loop:true,
-        margin: 25,
-        nav:true,
-        dots:false,
-        items:13,
-        autoplay:true, 
-        autoplayTimeout:5000, 
-        autoplayHoverPause:true,
-      };
-      $(".owl-brand").owlCarousel(options_1);
-
-      var ancho = $(window).width();
-      if (ancho <= 415){
-        $('.parallax').css({
-          'background-attachment': 'scroll'
-        });
-      }else{
-        // Resto del código parallax
-        $(window).scroll(function(){
-          var barra = $(window).scrollTop();
-          var posicion = barra * 0.30;
-    
-          $('.parallax').css({
-            'background-position': '0 -' + posicion + 'px'
-          });
-        });
-      }
-
-    });
-  </script>
+  <script src="js/app.js"></script>
 </body>
 </html>

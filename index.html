@@ -15,7 +15,8 @@
   <header class="bg-transparent">
     <div class="container">
       <div class="cd-main-header animate-search">
-        <div class="cd-logo"><a href="#0"><img src="img/cd-logo-light.svg" alt="Logo"></a></div>
+          <div class="cd-logo cd-logo-light"><a href="#0"><img src="img/cd-logo-light.svg" alt="Logo"></a></div>
+          <div class="cd-logo cd-logo-dark"><a href="#0"><img src="img/cd-logo-dark.svg" alt="Logo"></a></div>
     
         <nav class="cd-main-nav-wrapper">
           <a href="#search" class="cd-search-trigger cd-text-replace">Buscar</a>
@@ -41,14 +42,14 @@
     <div class="owl-carousel" id="owl-hero">
 
       <div class="item">
-        <div style="background-image: url('img/hero.jpeg');">
+        <div style="background-image: url('img/hero.jpeg');" class="cover">
           <h1>ASESORAMIENTO LEGAL DE ALTA CALIDAD
               CON UN ENFOQUE CREATIVO E INNOVADOR</h1>
         </div>
       </div>
 
       <div class="item">
-        <div style="background-image: url('img/hero.jpeg');">
+        <div style="background-image: url('img/hero.jpeg');" class="cover">
           <h1>ASESORAMIENTO LEGAL DE ALTA CALIDAD
               CON UN ENFOQUE CREATIVO E INNOVADOR</h1>
         </div>
@@ -163,7 +164,7 @@
           
           <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
             <div class="rw-card">
-              <div class="rw-card-top" style="background-image: url('https://picsum.photos/200/300')"></div>
+              <div class="rw-card-top cover" style="background-image: url('https://picsum.photos/200/300')"></div>
               <div class="rw-card-body">
                 <h3>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem modi voluptas natus perferendis in ad numquam tempora pariatur possimus, delectus sunt</p>
@@ -179,7 +180,7 @@
           
           <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
             <div class="rw-card">
-              <div class="rw-card-top" style="background-image: url('https://picsum.photos/200/300')"></div>
+              <div class="rw-card-top cover" style="background-image: url('https://picsum.photos/200/300')"></div>
               <div class="rw-card-body">
                 <h3>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem modi voluptas natus perferendis in ad numquam tempora pariatur possimus, delectus sunt</p>
@@ -195,7 +196,7 @@
           
           <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
             <div class="rw-card">
-              <div class="rw-card-top" style="background-image: url('https://picsum.photos/200/300')"></div>
+              <div class="rw-card-top cover" style="background-image: url('https://picsum.photos/200/300')"></div>
               <div class="rw-card-body">
                 <h3>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem modi voluptas natus perferendis in ad numquam tempora pariatur possimus, delectus sunt</p>
@@ -211,7 +212,7 @@
 
           <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
             <div class="rw-card">
-              <div class="rw-card-top" style="background-image: url('https://picsum.photos/200/300')"></div>
+              <div class="rw-card-top cover" style="background-image: url('https://picsum.photos/200/300')"></div>
               <div class="rw-card-body">
                 <h3>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem modi voluptas natus perferendis in ad numquam tempora pariatur possimus, delectus sunt</p>
@@ -325,33 +326,6 @@
   <script src="js/modernizr.js"></script> <!-- Modernizr -->
   <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
   <script src="js/owl.carousel.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      var options = {
-        loop:true,
-        margin:0,
-        nav:true,
-        dots:false,
-        items:1,
-        autoplay:true, 
-        autoplayTimeout:5000, 
-        autoplayHoverPause:true,
-      };
-      $(".owl-firma").owlCarousel(options);
-      $("#owl-hero").owlCarousel(options);
-
-      var options_1 = {
-        loop:true,
-        margin:0,
-        nav:true,
-        dots:false,
-        items:13,
-        autoplay:true, 
-        autoplayTimeout:5000, 
-        autoplayHoverPause:true,
-      };
-      $(".owl-brand").owlCarousel(options_1);
-    });
-  </script>
+  <script src="js/app.js"></script>
 </body>
 </html>
