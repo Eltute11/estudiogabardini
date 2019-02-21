@@ -12,16 +12,21 @@ $(document).ready(function(){
     $("#owl-firma").owlCarousel(options);
     $("#owl-hero").owlCarousel(options);
 
-    var options_brand = {
-      loop:true,
-      margin: 25,
-      nav:false,
-      dots:false,
-      items:4,
-      autoplay:true, 
-      autoplayTimeout:5000, 
-      autoplayHoverPause:true,
-      responsive:{
+
+    if($('body').hasClass('front-page')){
+      responsive = {
+        576:{
+            items:5
+        },
+        992:{
+            items:6
+        },
+        1200:{
+            items:8
+        }
+      };
+    }else{
+      responsive = {
         576:{
             items:6
         },
@@ -31,7 +36,19 @@ $(document).ready(function(){
         1200:{
             items:13
         }
-      }
+      };
+    }
+
+    var options_brand = {
+      loop:true,
+      margin: 25,
+      nav:false,
+      dots:true,
+      items:4,
+      autoplay:true, 
+      autoplayTimeout:5000, 
+      autoplayHoverPause:true,
+      responsive: responsive
     };
     $("#owl-brand").owlCarousel(options_brand);
 

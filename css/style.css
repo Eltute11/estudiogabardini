@@ -290,6 +290,32 @@ header.bg-light .cd-nav-trigger span{
 #owl-firma .owl-next{
     right:-27px;
 }
+#owl-brand .owl-dots{
+    text-align: center;
+}
+#owl-brand .owl-dot{
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 50px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #777777;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transition: background .6s ease;
+}
+#owl-brand .owl-dot:focus{
+    outline: unset;
+}
+#owl-brand .owl-dot.active{
+    background-color: #af0022;
+}
+
 .b-lead{
     font-family: "Libre Baskerville", sans-serif;
     font-size: 36px;
