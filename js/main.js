@@ -4,12 +4,12 @@ jQuery(document).ready(function($){
         $('.cd-logo-light').attr('style', 'opacity: 0; display: none');
 		$('.cd-logo-dark').attr('style', 'opacity: 1; display: inline-block');
 
-		var ancho = $(window).width();
-		if (ancho <= 1023){
-			$('body').css({'margin-top': '50px'});
-		}else{
-			$('body').css({'margin-top': '80px'});
-		};
+		// var ancho = $(window).width();
+		// if (ancho <= 1023){
+		// 	$('body').css({'margin-top': '50px'});
+		// }else{
+		// 	$('body').css({'margin-top': '80px'});
+		// };
 		
 		
 	}else{

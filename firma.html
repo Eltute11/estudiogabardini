@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>La Firma | Gabardini Abogados</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -52,13 +52,13 @@
             <p>Proponemos defender los intereses de nuestros clientes con el más alto estándar de seguridad posible, proporcionando un asesoramiento jurídico personalizado, eficaz y de calidad con un enfoque creativo e innovador en el logro de sus objetivos, generador de confianza y resultados.
             <br>Nos hemos dedicado al asesoramiento jurídico tanto en la prevención de conflictos legales como a la hora de realizar nuevos emprendimientos.</p>
             <br>
-            <a href="#">Ver nuestra historia</a>
+            <a href="#" data-toggle="modal" data-target="#modalHistoria">VER NUESTRA HISTORIA</a>
             <br>
             <br>
             <p>La práctica profesional la desarrollamos tanto en el ámbito de la asesoría jurídica preventiva, como en la de la dirección de asuntos contenciosos.
             <br>Atendemos las diferentes materias legales y etapas procedimentales que surjan en cada caso, ofreciendo una amplia gama de servicios a empresas e instituciones de los más diversos sectores, con un enfoque innovador orientado al cumplimiento de los objetivos de nuestros clientes.</p>
             <br>
-            <a href="#">VEA CORRESPONSALÍAS</a>
+            <a href="#" data-toggle="modal" data-target="#modalCorresponsalia">VEA CORRESPONSALÍAS</a>
           </div>
 
           <div class="col-lg-6 pl-lg-5 mt-5 mt-lg-0">
@@ -71,10 +71,73 @@
               </div>
               <div class="item">
                 <div style="background-image: url('img/bg-areasdepractica.jpg')" class="cover">
-                  <h2>Derecho bancario y financiero</h2>
+                  <h2>Reestructuración de deudas</h2>
                 </div>
               </div>
+              <div class="item">
+                <div style="background-image: url('img/bg-areasdepractica.jpg')" class="cover">
+                  <h2>Concursos y quiebras</h2>
+                </div>
+              </div>
+              <div class="item">
+                <div style="background-image: url('img/bg-areasdepractica.jpg')" class="cover">
+                  <h2>Derecho administrativo</h2>
+                </div>
+              </div>
+              <div class="item">
+                <div style="background-image: url('img/bg-areasdepractica.jpg')" class="cover">
+                  <h2>Derecho
+                      ambiental</h2>
+                </div>
+              </div>
+              <div class="item">
+                <div style="background-image: url('img/bg-areasdepractica.jpg')" class="cover">
+                  <h2>Derecho comercial y de la competencia</h2>
+                </div>
+              </div>
+              <div class="item">
+                <div style="background-image: url('img/bg-areasdepractica.jpg')" class="cover">
+                  <h2>Derecho fiscal</h2>
+                </div>
+              </div>
+              <div class="item">
+                <div style="background-image: url('img/bg-areasdepractica.jpg')" class="cover">
+                  <h2>Derecho laboral empresario</h2>
+                </div>
+              </div>
+              <div class="item">
+                <div style="background-image: url('img/bg-areasdepractica.jpg')" class="cover">
+                  <h2>Nuevas tecnologías de la información</h2>
+                </div>
+              </div>
+              <div class="item">
+                <div style="background-image: url('img/bg-areasdepractica.jpg')" class="cover">
+                  <h2>Marcas y patentes</h2>
+                </div>
+              </div>
+              <div class="item">
+                <div style="background-image: url('img/bg-areasdepractica.jpg')" class="cover">
+                  <h2>Asuntos inmobiliarios y de la construcción</h2>
+                </div>
+              </div>
+              <div class="item">
+                <div style="background-image: url('img/bg-areasdepractica.jpg')" class="cover">
+                  <h2>Seguros</h2>
+                </div>
+              </div>
+              <div class="item">
+                <div style="background-image: url('img/bg-areasdepractica.jpg')" class="cover">
+                  <h2>Sociedades, inversiones, fusiones y adquisiciones</h2>
+                </div>
+              </div>
+              <div class="item">
+                <div style="background-image: url('img/bg-areasdepractica.jpg')" class="cover">
+                  <h2>Asuntos contenciosos, solución de controversias y arbitraje</h2>
+                </div>
+              </div>
+
             </div>
+            <img src="img/50.png" alt="50" class="d-none d-lg-block" id="fifty-card">
           </div>
 
         </div>
@@ -171,7 +234,7 @@
 
     <section class="bg-secondary py-5">
       <h2 class="text-center pt-4">Clientes</h2>
-      <div class="owl-carousel pb-5" id="owl-brand">
+      <div class="owl-carousel pb-5 px-3 px-lg-5" id="owl-brand">
         <img src="img/clientes/farmacity.jpg" alt="farmacity">
         <img src="img/clientes/cablevision.jpg" alt="cablevision">
         <img src="img/clientes/mapfre.jpg" alt="mapfre">
@@ -219,7 +282,7 @@
               </div>
               <div class="col-xl-5">
                 <form action="">
-                  <input type="email" name="email" placeholder="E-mail">
+                  <input type="email" name="email" class="bg-dark" placeholder="E-mail">
                   <buttom type="buttom" id="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i></buttom>
                 </form>
               </div>
@@ -253,7 +316,94 @@
 
   </main>
 
+  <div class="modal fade" id="modalHistoria" tabindex="-1" role="dialog" aria-labelledby="modalHistoriaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h2 style="text-transform: unset;">Nuestra historia</h2>
+          <p class="mb-4">
+              ESTUDIO GABARDINI ABOGADOS fue fundado en el año 1968 en la ciudad de Resistencia, capital de la Provincia del Chaco en la región nordeste de la República Argentina, por Eduardo Rodolfo Gabardini.
+          </p>
+          <p class="mb-4">
+              Con un perfil claramente orientado a la atención de empresas radicadas en las provincias del Chaco, Corrientes y Formosa, se ha dedicado al asesoramiento jurídico tanto en la prevención de conflictos legales como a la hora de realizar nuevos emprendimientos.
+          </p>
+          <p class="mb-4">
+              Rápidamente, se posicionó como uno de los Estudios de abogados más prestigiosos de la provincia del Chaco y de la región, con una amplia experiencia en todas las áreas profesionales de la actividad jurídica, atendiendo a las empresas nacionales y sociedades extranjeras con inversiones en el área nordeste argentina.
+          </p>
+          <p class="mb-4">
+              ESTUDIO GABARDINI ABOGADOS actúa desde sus comienzos como corresponsal de los Estudios de abogados más importantes de la Argentina en la atención de litigios radicados en los tribunales provinciales y federales y como asesores, árbitros o mediadores en controversias jurídicas locales. (Chaco, Corrientes y Formosa).
+          </p>
+          <p class="mb-4">
+              La seriedad y la eficacia con que ha desempeñado y desempeña esta actividad de corresponsalía le reporta el permanente reconocimiento de los colegas y profesionales que requieren y confían sus servicios jurídicos.
+          </p>
+          <p class="mb-4">
+              Su estructura y recursos le permiten mantener permanentemente informados a los abogados o Estudios jurídicos de otras provincias sobre el estado de asuntos legales radicados en los tribunales de las provincias de Chaco, Corrientes y Formosa.
+          </p>
+          <p class="mb-4">
+              Por su parte, ESTUDIO GABARDINI ABOGADOS posee sus propios corresponsales y estudios jurídicos asociados en las ciudades ubicadas en el interior de las provincias sobre las que actúa.
+          </p>
+          <p class="mb-4">
+              La constante y fluida interrelación con sus abogados y estudios corresponsales le permite a ESTUDIO GABARDINI ABOGADOS tener una presencia efectiva y controlada en todos los puntos de la región con información diaria de las novedades ocurridas.
+          </p>
+          <p class="mb-4">
+              La trayectoria de ESTUDIO GABARDINI ABOGADOS es el resultado de un intenso trabajo en equipo, de la asociación con otros estudios jurídicos y de la continua y selectiva incorporación de abogados, en las Provincias de Chaco, Corrientes y Formosa.              
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="modal fade" id="modalCorresponsalia" tabindex="-1" role="dialog" aria-labelledby="modalCorresponsaliaLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h2 style="text-transform: unset;">Corresponsalías</h2>
+            <ul>
+              <li>:: Allende & Brea</li>
+              <li>:: Baker & Mc. Kenzie S.C.</li>
+              <li>:: Bullo, Tassi, Estebenet, Lipera, Torassa & Asociados</li>
+              <li>:: Funes de Rioja & Asociados</li>
+              <li>:: Estudio Moltedo Abogados</li>
+              <li>:: M & M Bomchil</li>
+              <li>:: Negri & Teijeiro Abogados</li>
+              <li>:: O´Farrill & Associattes (USA/Mexico)</li>
+              <li>:: Wsmith (BVI)</li>
+              <li>:: Beretta Kahale Godoy</li>
+              <li>:: Clariá & Trevisán Abogados</li>
+              <li>:: Avila, Fernándes Blanco & Farini Duggan</li>
+              <li>:: Rossi Camilion & Asociados</li>
+              <li>:: Cibils, Labougle, Ibañez Abogados</li>
+              <li>:: Biscardi & Asociados</li>
+              <li>:: Estudio Chehtman</li>
+              <li>:: Landin & Asociados</li>
+              <li>:: Estudio Mesri</li>
+              <li>:: Estudio Itzcovich Griot & Asociados</li>
+              <li>:: Baeza & Asociados</li>
+              <li>:: Facal, Martín & Asociados</li>
+              <li>:: Montes de Oca Pla Cárdenas Abogados</li>
+              <li>:: Estudio Juridico Strunz</li>
+              <li>:: Navarro Floria, Loprete & Asociados Abogados</li>
+              <li>:: Laborde & Laborde</li>
+              <li>:: Racciatti, Hourquescos & Rourich</li>
+              <li>:: Coll y Asociados</li>
+              <li>:: Spinetta - Bardinet & Asociados.</li>
+            </ul>
+            <p class="mt-4">
+              Su estructura y recursos le permiten mantener permanentemente informados a los abogados o Estudios jurídicos de otras provincias sobre el estado de asuntos legales radicados en los tribunales de las provincias de Chaco, Corrientes y Formosa.
+            </p>
+            <p class="mt-4">
+              Por su parte, ESTUDIO GABARDINI ABOGADOS posee sus propios corresponsales y estudios jurídicos asociados en las ciudades ubicadas en el interior de las provincias sobre las que actúa.
+            </p>
+            <p class="mt-4">
+              La constante y fluida interrelación con sus abogados y estudios corresponsales le permite a ESTUDIO GABARDINI ABOGADOS tener una presencia efectiva y controlada en todos los puntos de la región con información diaria de las novedades ocurridas.
+            </p>
+            <p class="mt-4">
+              La trayectoria de ESTUDIO GABARDINI ABOGADOS es el resultado de un intenso trabajo en equipo, de la asociación con otros estudios jurídicos y de la continua y selectiva incorporación de abogados, en las Provincias de Chaco, Corrientes y Formosa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -275,7 +425,7 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/main.js"></script> <!-- Resource jQuery -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="js/modernizr.js"></script> <!-- Modernizr -->
   <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
   <script src="js/owl.carousel.min.js"></script>
